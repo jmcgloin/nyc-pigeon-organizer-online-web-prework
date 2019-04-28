@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
   # pige_values - the values of the categories
   pige_values = data.values.collect do
     |vals|
-    vals.keys[0]
+    vals.keys
   end
   pige_names = data.values.collect do
     |vals|
