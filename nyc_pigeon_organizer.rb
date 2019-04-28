@@ -5,6 +5,10 @@ def nyc_pigeon_organizer(data)
   # pige_keys - the categories, will be second level
   pige_keys = data.keys
   # pige_values - the values of the categories
+  pige_values = data.values.collect do
+    |vals|
+    vals.keys[0]
+  end
   
   
   
