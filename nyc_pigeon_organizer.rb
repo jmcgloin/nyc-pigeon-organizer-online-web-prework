@@ -13,6 +13,18 @@ def nyc_pigeon_organizer(data)
     |vals|
     vals.values[0]
   end
+  pige_names = pige_names.flatten.uniq
+  
+  pige_names.each do
+    |name|
+    output_data[name] = {}
+    pige_keys.each do
+      |key|
+      if !output_data[name].key?(key) then output_data[name][key] = [] end
+      pige_values.each do
+        |value|
+        if !output_data[name][key].include?(value)
+  end
   
   
   
