@@ -3,7 +3,10 @@ def nyc_pigeon_organizer(data)
   output_data = {}
   # pige_names - the names of the pigeons, will be the top level keys
   # pige_keys - the categories, will be second level
+  pige_keys = data.keys
   # pige_values - the values of the categories
+  
+  
   
   binding.pry
   
