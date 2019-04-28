@@ -9,7 +9,10 @@ def nyc_pigeon_organizer(data)
     |vals|
     vals.keys[0]
   end
-  
+  pige_names = data.values.collect do
+    |vals|
+    vals.values[0]
+  end
   
   
   binding.pry
