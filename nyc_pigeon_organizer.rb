@@ -25,7 +25,7 @@ def nyc_pigeon_organizer(data)
       if !output_data[name].key?(key) then output_data[name][key] = [] end
       pige_values.each do
         |value|
-        if !output_data[name][key].include?(value) then output_data[name][key].push(value)
+        if !output_data[name][key].include?(value) then output_data[name][key].push(value) end
   end
   
   
