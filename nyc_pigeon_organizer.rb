@@ -21,10 +21,11 @@ def nyc_pigeon_organizer(data)
     output_data[name] = {}
     pige_keys.each do
       |key|
+      binding.pry
       if !output_data[name].key?(key) then output_data[name][key] = [] end
       pige_values.each do
         |value|
-        if !output_data[name][key].include?(value)
+        if !output_data[name][key].include?(value) then output_data[name][key].push(value)
   end
   
   
