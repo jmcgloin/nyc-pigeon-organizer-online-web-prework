@@ -18,14 +18,17 @@ def nyc_pigeon_organizer(data)
   
   pige_names.each do
     |name|
+    # top level must include all names
     output_data[name] = {}
     pige_keys.each do
       |key|
+      # each name must have each key
       binding.pry
       if !output_data[name].key?(key) then output_data[name][key] = [] end
       pige_values.each do
         |value|
-        if !output_data[name][key].include?(value) then output_data[name][key].push(value) end
+        # each name/key must only have appropriate values
+        if !output_data[name][key].include?(value) && data[key][value].include?(name) then output_data[name][key].push(value) end
       end
     end
   end
