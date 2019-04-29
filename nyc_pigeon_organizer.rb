@@ -31,7 +31,7 @@ def nyc_pigeon_organizer(data)
         if !output_data[name][key].include?(value) && data[key].key?(value)
           if data[key][value].include?(name) then output_data[name][key].push(value) end
         end
-        if value == "Central Park" then binding.pry end
+        if value == "Library" then binding.pry end
       end
     end
   end
