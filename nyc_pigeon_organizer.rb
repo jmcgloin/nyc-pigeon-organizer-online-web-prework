@@ -11,9 +11,10 @@ def nyc_pigeon_organizer(data)
   # this gives an array of all the pigeon names
   
   # Hash of the categories and their values, e.g. color => grey
-  keys_vals = data.keys.collect do
+  keys_vals = {}
+  data.keys.each do
     |category|
-    [category] => data[category].keys
+    keys_vals[category] = data[category].keys
   end
   binding.pry
 end
