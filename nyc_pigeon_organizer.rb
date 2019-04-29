@@ -34,31 +34,10 @@ def nyc_pigeon_organizer(data)
         if data[key][val].include?(name)
           # val = val.to_s
           if !output_data[name].key?(key) then output_data[name][key] = [] end
-          # if name == "Alex" && key == :lives && val = "City Hall" then binding.pry end
           if !output_data[name][key].include?(val) then output_data[name][key].push(val.to_s) end
         end
       end
     end
   end
-  
-      
-  
-  # binding.pry
   output_data
 end
-
-data = {:color=>
-  {:purple=>["Theo", "Peter Jr.", "Lucky"],
-  :grey=>["Theo", "Peter Jr.", "Ms. K"],
-  :white=>["Queenie", "Andrew", "Ms. K", "Alex"],
-  :brown=>["Queenie", "Alex"]},
-:gender=>
-  {:male=>["Alex", "Theo", "Peter Jr.", "Andrew", "Lucky"],
-  :female=>["Queenie", "Ms. K"]},
-:lives=>
-  {"Subway"=>["Theo", "Queenie"],
-  "Central Park"=>["Alex", "Ms. K", "Lucky"],
-  "Library"=>["Peter Jr."],
-  "City Hall"=>["Andrew"]}}
-   
-nyc_pigeon_organizer(data)
