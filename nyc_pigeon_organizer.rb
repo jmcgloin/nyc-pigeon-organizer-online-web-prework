@@ -23,7 +23,7 @@ def nyc_pigeon_organizer(data)
     pige_keys.each do
       |key|
       # each name must have each key
-      binding.pry
+      # binding.pry
       if !output_data[name].key?(key) then output_data[name][key] = [] end
       pige_values.each do
         |value|
