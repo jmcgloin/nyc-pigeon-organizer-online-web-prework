@@ -26,6 +26,8 @@ def nyc_pigeon_organizer(data)
       pige_values.each do
         |value|
         if !output_data[name][key].include?(value) then output_data[name][key].push(value) end
+      end
+    end
   end
   
   
