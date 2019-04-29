@@ -9,6 +9,7 @@ def nyc_pigeon_organizer(data)
     |vals|
     vals.keys
   end
+  pige_values = pige_values.flatten
   pige_names = data.values.collect do
     |vals|
     vals.values[0]
