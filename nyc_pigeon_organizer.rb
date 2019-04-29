@@ -32,7 +32,7 @@ def nyc_pigeon_organizer(data)
       pige_names.each do
         |name|
         if data[key][val].include?(name)
-          if !output_data[name].value?(key) then output_data[name][key] = [] end
+          if !output_data[name].key?(key) then output_data[name][key] = [] end
           # if name == "Alex" && key == :lives && val = "City Hall" then binding.pry end
           if !output_data[name][key].include?(val) then output_data[name][key].push(val) end
         end
