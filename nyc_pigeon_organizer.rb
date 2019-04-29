@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
   # pige_names - the names of the pigeons, will be the top level keys
   pige_names = data.values.collect do
     |vals|
-    vals.values[0]
+    vals.values.flatten
   end
   pige_names = pige_names.flatten.uniq
   # this gives an array of all the pigeon names
