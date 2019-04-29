@@ -28,7 +28,7 @@ def nyc_pigeon_organizer(data)
       pige_values.each do
         |value|
         # each name/key must only have appropriate values
-        # if !output_data[name][key].include?(value) && data[key].value?(value)
+        # if !output_data[name][key].include?(value) && data[key].key?(value)
         #   if data[key][value].include?(name) then output_data[name][key].push(value) end
         # end
         binding.pry
