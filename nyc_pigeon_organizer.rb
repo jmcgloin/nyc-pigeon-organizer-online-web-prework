@@ -34,7 +34,7 @@ def nyc_pigeon_organizer(data)
         if data[key][val].include?(name)
           if !output_data[name].value?(key) then output_data[name][key] = [] end
           if name == "Alex" then binding.pry end
-          if !output_data[name][key].include?(val) then output[name][key].push(val) end
+          # if !output_data[name][key].include?(val) then output[name][key].push(val) end
         end
       end
     end
