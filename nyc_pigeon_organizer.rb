@@ -10,11 +10,27 @@ def nyc_pigeon_organizer(data)
   pige_names = pige_names.flatten.uniq
   # this gives an array of all the pigeon names
   
+  # Populate the output data with the names as keys
+  pige_names.each do
+    |name|
+    output_data[name] = {}
+  end
+  
   # Hash of the categories and their values, e.g. color => grey
   keys_vals = {}
   data.keys.each do
     |category|
     keys_vals[category] = data[category].keys
   end
+  # this gives all combinations
+  
+  # Now check for each combination that each name is in
+  keys_vals.keys.each do
+    |key|
+    keys_vals[key].each do
+      |val|
+      if data[key][val].
+      
+  
   binding.pry
 end
